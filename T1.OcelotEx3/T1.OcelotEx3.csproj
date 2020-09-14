@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>T1.OcelotEx</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Clients\" />
+    <Folder Include="MagicOnionProtocols\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="App.Metrics" Version="4.1.0" />
+    <PackageReference Include="App.Metrics.AspNetCore.All" Version="4.1.0" />
+    <PackageReference Include="App.Metrics.Reporting.Console" Version="4.1.0" />
+    <PackageReference Include="App.Metrics.Reporting.InfluxDB" Version="4.1.0" />
+    <PackageReference Include="Ocelot" Version="15.0.7" />
+    <PackageReference Include="Ocelot.Provider.Consul" Version="15.0.7" />
+    <PackageReference Include="T1.Standard" Version="1.0.42" />
+  </ItemGroup>
+
+</Project>
